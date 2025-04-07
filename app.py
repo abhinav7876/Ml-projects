@@ -30,7 +30,7 @@ def predict_datapoint():
         logging.info("returned final prediction result")
         return render_template("home.html",results=results[0])#as it will be in list
 if __name__=="__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0",port=8080)
 
 
 
